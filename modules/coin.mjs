@@ -103,10 +103,10 @@ function countFlips(array) {
 function flipACoin(call) {
   var result = coinFlip();
   if (result == call) {
-    return {"call": call, "flip": result, "result": "win"};
+    return {call: call, flip: result, result: "win"};
   }
   else {
-    return {"call": call, "flip": result, "result": "lose"};
+    return {call: call, flip: result, result: "lose"};
   }
 }
 
