@@ -1,13 +1,14 @@
 import { coinFlip, coinFlips, countFlips, flipACoin } from "./modules/coin.mjs";
 
-var num = prompt();
-const trial = 0;
+//const process = require('process');
+var number = process.argv[2];
+var trial = 0;
 
-if (num == null) {
+if (number == null) {
     trial = coinFlips(1);
 }
 else {
-    trial = coinFlips(num);
+    trial = coinFlips(number);
 }
 
 console.log(trial);
