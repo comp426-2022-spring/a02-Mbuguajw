@@ -1,8 +1,10 @@
 import { coinFlip, coinFlips, countFlips, flipACoin } from "./modules/coin.mjs";
+import minimist from "minimist";
 
-var call = process.argv[2];
+var args = minimist((process.argv.slice(2)));
+var command = args.call;
 
-if (call == 'heads' || call == 'tails') {
+if (command == 'heads' || command == 'tails') {
     console.log(flipACoin(call));
 }
 else {
