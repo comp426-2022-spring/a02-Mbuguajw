@@ -9,5 +9,5 @@ else if ((command != 'heads') && (command != 'tails')) {
     console.log("Error: wrong input.\nUsage: node guess-flip --call=[heads|tails]");
 }
 else {
-    console.log(flipACoin(call));
+    console.log(flipACoin(command));
 }
