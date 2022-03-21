@@ -8,6 +8,9 @@ const command = args.call
 if (command == "heads" || command == "tails") {
     console.log(flipACoin(command));
 }
-else {
+else if (command == null) {
     console.log("Error: no input.\nUsage: node guess-flip --call=[heads|tails]");
+}
+else {
+    console.log("Error: bad input.\nUsage: node guess-flip --call=[heads|tails]");
 }
