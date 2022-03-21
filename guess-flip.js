@@ -1,7 +1,7 @@
 import { coinFlip, coinFlips, countFlips, flipACoin } from "./modules/coin.mjs";
 
 var command = process.argv[2];
-if (command == "heads" || command == "tails") {
+if (command === "heads" || command === "tails") {
     console.log(flipACoin(command));
 }
 else {
