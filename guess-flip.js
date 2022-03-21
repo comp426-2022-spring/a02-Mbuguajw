@@ -5,7 +5,7 @@ const args = minimist(process.argv.slice(2))
 args['call']
 const command = args.call
 
-if (command === "heads" || command === "tails") {
+if (command == "heads" || command == "tails") {
     console.log(flipACoin(command));
 }
 else {
